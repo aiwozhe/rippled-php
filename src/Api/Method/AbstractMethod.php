@@ -1,9 +1,9 @@
 <?php declare(strict_types=1);
 
-namespace FOXRP\Rippled\Api\Method;
+namespace Aiwozhe\Rippled\Api\Method;
 
-use FOXRP\Rippled\Api\AbstractFieldable;
-use FOXRP\Rippled\Exception\InvalidParameterException;
+use Aiwozhe\Rippled\Api\AbstractFieldable;
+use Aiwozhe\Rippled\Exception\InvalidParameterException;
 
 /**
  * Provides an abstract for defining methods and validating their fields.

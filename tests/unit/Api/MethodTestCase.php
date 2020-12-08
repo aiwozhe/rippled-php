@@ -1,11 +1,11 @@
 <?php
 
-namespace FOXRP\Rippled\Tests\Api;
+namespace Aiwozhe\Rippled\Tests\Api;
 
 use GuzzleHttp\Psr7\Response;
 use PHPUnit\Framework\TestCase;
-use FOXRP\Rippled\Api\Method;
-use FOXRP\Rippled\Client;
+use Aiwozhe\Rippled\Api\Method;
+use Aiwozhe\Rippled\Client;
 
 class MethodTestCase extends TestCase
 {
@@ -30,7 +30,7 @@ class MethodTestCase extends TestCase
     protected function setUp()
     {
         $this->httpMockClient = new \Http\Mock\Client ();
-        $this->client = new \FOXRP\Rippled\Client('https://s1.ripple.com:51234', $this->httpMockClient);
+        $this->client = new \Aiwozhe\Rippled\Client('https://s1.ripple.com:51234', $this->httpMockClient);
 
         // Set default response for when no response is set in a test.
         $response = new Response(

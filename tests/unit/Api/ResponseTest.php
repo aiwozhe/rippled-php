@@ -1,12 +1,12 @@
 <?php
 
-namespace FOXRP\Rippled\Tests\Api;
+namespace Aiwozhe\Rippled\Tests\Api;
 
-use FOXRP\Rippled\Exception\ResponseErrorException;
-use FOXRP\Rippled\Exception\RippledException;
+use Aiwozhe\Rippled\Exception\ResponseErrorException;
+use Aiwozhe\Rippled\Exception\RippledException;
 use GuzzleHttp\Psr7\Response as GuzzleResponse;
 use PHPUnit\Framework\TestCase;
-use FOXRP\Rippled\Api\Response;
+use Aiwozhe\Rippled\Api\Response;
 
 class ResponseTest extends TestCase
 {

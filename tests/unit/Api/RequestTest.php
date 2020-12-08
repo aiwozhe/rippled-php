@@ -1,10 +1,10 @@
 <?php
 
-namespace FOXRP\Rippled\Tests\Api;
+namespace Aiwozhe\Rippled\Tests\Api;
 
 use PHPUnit\Framework\TestCase;
-use FOXRP\Rippled\Api\Request;
-use FOXRP\Rippled\Client;
+use Aiwozhe\Rippled\Api\Request;
+use Aiwozhe\Rippled\Client;
 
 class RequestTest extends TestCase
 {
@@ -12,7 +12,7 @@ class RequestTest extends TestCase
     {
         $this->assertTrue(true);
     }
-    /*
+
     public function testRequest()
     {
         $client = new Client('https://s.altnet.rippletest.net:51234');
@@ -35,5 +35,4 @@ class RequestTest extends TestCase
 
         print_r($res->getResult());
     }
-    */
 }

@@ -1,8 +1,8 @@
 <?php declare(strict_types=1);
 
-namespace FOXRP\Rippled\Api\TransactionType;
+namespace Aiwozhe\Rippled\Api\TransactionType;
 
-use FOXRP\Rippled\Api\Field;
+use Aiwozhe\Rippled\Api\Field;
 
 /**
  * SignerListSet Transaction Type Class
@@ -17,7 +17,7 @@ class SignerListSet extends AbstractTransactionType
     /**
      * {@inheritDoc}
      *
-     * @throws \FOXRP\Rippled\Exception\FieldException
+     * @throws \Aiwozhe\Rippled\Exception\FieldException
      */
     public function setFields(): void
     {

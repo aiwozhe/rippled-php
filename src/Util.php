@@ -1,6 +1,6 @@
 <?php declare(strict_types=1);
 
-namespace FOXRP\Rippled;
+namespace Aiwozhe\Rippled;
 
 class Util
 {

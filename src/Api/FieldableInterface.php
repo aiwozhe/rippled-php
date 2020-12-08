@@ -1,6 +1,6 @@
 <?php declare(strict_types=1);
 
-namespace FOXRP\Rippled\Api;
+namespace Aiwozhe\Rippled\Api;
 
 /**
  * Fieldable provides methods to build fieldable objects which can be validated.

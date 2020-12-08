@@ -1,13 +1,13 @@
 <?php declare(strict_types=1);
 
-namespace FOXRP\Rippled;
+namespace Aiwozhe\Rippled;
 
 use Http\Client\HttpClient;
 use Http\Discovery\HttpClientDiscovery;
 use Http\Discovery\MessageFactoryDiscovery;
 use Http\Message\MessageFactory;
-use FOXRP\Rippled\Api\Response;
-use FOXRP\Rippled\Api\Request;
+use Aiwozhe\Rippled\Api\Response;
+use Aiwozhe\Rippled\Api\Request;
 
 /**
  *  A rippled client.

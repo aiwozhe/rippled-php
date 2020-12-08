@@ -1,6 +1,6 @@
 <?php
 
-namespace FOXRP\Rippled\Tests\Api\Method;
+namespace Aiwozhe\Rippled\Tests\Api\Method;
 
 use PHPUnit\Framework\TestCase;
 

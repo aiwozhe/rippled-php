@@ -1,7 +1,7 @@
 # Transactions
 
-You will want to work closely with the 
-[Transaction Formats Documentation](https://developers.ripple.com/transaction-formats.html) when building Transactions. 
+You will want to work closely with the
+[Transaction Formats Documentation](https://developers.ripple.com/transaction-formats.html) when building Transactions.
 Each [Transaction Type](https://developers.ripple.com/transaction-types.html) is defined there along with `required` and
 auto-fillable` fields.
 
@@ -15,7 +15,7 @@ provides additional utility for building and submitting transactions including:
 
 ## Local Signing Dependency
 
-The XRP Ledger API has methods to [Sign](https://developers.ripple.com/sign.html) or 
+The XRP Ledger API has methods to [Sign](https://developers.ripple.com/sign.html) or
 [Sign-and-Submit](https://developers.ripple.com/submit.html) however that requires submitting secrets (Regular Keys)
 over the internet.
 
@@ -45,7 +45,7 @@ addition to the parameters. The `Client` object however is not required if you a
 a transaction.
 
 ```php
-$client = new \FOXRP\Rippled\Client('https://s1.ripple.com:51234');
+$client = new \Aiwozhe\Rippled\Client('https://s1.ripple.com:51234');
 
 $txParams = [
     'TransactionType' => 'Payment',
@@ -55,7 +55,7 @@ $txParams = [
     'Fee' => '000012'
 ];
 
-$transaction = new \FOXRP\Rippled\Api\Transaction($txParams, $client);
+$transaction = new \Aiwozhe\Rippled\Api\Transaction($txParams, $client);
 ```
 
 ## Submitting a Transaction
@@ -122,11 +122,11 @@ $txData = $transaction->getTx();
 
 Remember, for local signing, the NPM package `xrpsign-cli` must be installed and available in the system path.
 
-Note the [API documentation](https://developers.ripple.com/transaction-common-fields.html#auto-fillable-fields) states 
+Note the [API documentation](https://developers.ripple.com/transaction-common-fields.html#auto-fillable-fields) states
 that `auto-fillable` parameters must be set before a transaction can be signed. For a `Payment` transaction, these
 are the `Fee` and `Sequence` fields.
 
-The `signLocal` method will populate `Sequence` if it doesn't exist by calling the `account_info` method. You will still 
+The `signLocal` method will populate `Sequence` if it doesn't exist by calling the `account_info` method. You will still
 be required to set the `Fee` for now.
 
 See the [transaction costs](https://developers.ripple.com/transaction-cost.html) documentation for how to calculate

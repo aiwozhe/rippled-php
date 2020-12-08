@@ -1,9 +1,9 @@
 <?php
 
-namespace FOXRP\Rippled\FunctionalTests;
+namespace Aiwozhe\Rippled\FunctionalTests;
 
 use PHPUnit\Framework\TestCase;
-use FOXRP\Rippled\Client;
+use Aiwozhe\Rippled\Client;
 
 class FunctionalTestCase extends TestCase
 {

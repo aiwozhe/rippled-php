@@ -1,9 +1,9 @@
 <?php declare(strict_types=1);
 
-namespace FOXRP\Rippled\Api;
+namespace Aiwozhe\Rippled\Api;
 
-use FOXRP\Rippled\Exception\ResponseErrorException;
-use FOXRP\Rippled\Exception\RippledException;
+use Aiwozhe\Rippled\Exception\ResponseErrorException;
+use Aiwozhe\Rippled\Exception\RippledException;
 use Psr\Http\Message\ResponseInterface;
 
 class Response

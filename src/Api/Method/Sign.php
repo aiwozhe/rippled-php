@@ -1,9 +1,9 @@
 <?php declare(strict_types=1);
 
-namespace FOXRP\Rippled\Api\Method;
+namespace Aiwozhe\Rippled\Api\Method;
 
-use FOXRP\Rippled\Api\Field;
-use FOXRP\Rippled\Exception\InvalidParameterException;
+use Aiwozhe\Rippled\Api\Field;
+use Aiwozhe\Rippled\Exception\InvalidParameterException;
 
 /**
  * Sign Method Class
@@ -19,7 +19,7 @@ class Sign extends AbstractMethod
     /**
      * {@inheritDoc}
      *
-     * @throws \FOXRP\Rippled\Exception\FieldException
+     * @throws \Aiwozhe\Rippled\Exception\FieldException
      */
     public function setFields(): void
     {

@@ -1,11 +1,11 @@
 <?php declare(strict_types=1);
 
-namespace FOXRP\Rippled\Exception;
+namespace Aiwozhe\Rippled\Exception;
 
 /**
  * An exception for transaction errors.
  *
- * @package FOXRP\Rippled\Exception
+ * @package Aiwozhe\Rippled\Exception
  */
 class TransactionException extends RippledException
 {

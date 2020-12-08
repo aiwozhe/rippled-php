@@ -1,9 +1,9 @@
 <?php
 
-namespace FOXRP\Rippled\Tests\Exception;
+namespace Aiwozhe\Rippled\Tests\Exception;
 
 use PHPUnit\Framework\TestCase;
-use FOXRP\Rippled\Exception\TransactionTypeException;
+use Aiwozhe\Rippled\Exception\TransactionTypeException;
 
 class TransactionTypeExceptionTest extends TestCase
 {

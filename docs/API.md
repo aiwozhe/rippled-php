@@ -2,7 +2,7 @@
 
 This document covers using the [Client](../src/Client.php) class to communicate with the remote API.
 
-Technically you can use the `Transaction` API methods, however this library provides a 
+Technically you can use the `Transaction` API methods, however this library provides a
 [Transaction](../src/Api/Transaction.php) class to make them much easier to work with.
 
 See the [Transactions Documentation](Transactions.md) for more on Transactions.
@@ -16,7 +16,7 @@ Create a `Client` object with a uri:
 ```php
 <?php
 
-use FOXRP\Rippled\Client;
+use Aiwozhe\Rippled\Client;
 
 $client = new Client('https://s1.ripple.com:51234');
 ```
@@ -25,7 +25,7 @@ Create a `Client` object with an array:
 ```php
 <?php
 
-use FOXRP\Rippled\Client;
+use Aiwozhe\Rippled\Client;
 
 $client = new Client([
     'scheme' => 'https',
@@ -36,14 +36,14 @@ $client = new Client([
 
 ## Sending Requests
 
-The [API documentation](https://developers.ripple.com/rippled-api.html) clearly defines method name and supported 
+The [API documentation](https://developers.ripple.com/rippled-api.html) clearly defines method name and supported
 parameters, along with `JSON-RPC` examples for request and responses.
 
 Use the documentation to craft your parameters and pass them in as an associative array.
 
 ```php
 <?php
-use FOXRP\Rippled\Client;
+use Aiwozhe\Rippled\Client;
 
 $client = new Client('https://s1.ripple.com:51234');
 
@@ -66,7 +66,7 @@ Example: Retrieve a request object from the Client.
 ```php
 <?php
 
-use FOXRP\Rippled\Client;
+use Aiwozhe\Rippled\Client;
 
 $client = new Client('https://s1.ripple.com:51234');
 
@@ -81,8 +81,8 @@ $response = $request->send();
 ```php
 <?php
 
-use FOXRP\Rippled\Api\Request;
-use FOXRP\Rippled\Client;
+use Aiwozhe\Rippled\Api\Request;
+use Aiwozhe\Rippled\Client;
 
 $client = new Client('https://s1.ripple.com:51234');
 
@@ -101,9 +101,9 @@ Catch `InvalidParameterException` for messages specific to missing or invalid pa
 ```php
 <?php
 
-use FOXRP\Rippled\Client;
-use FOXRP\Rippled\Exception\InvalidParameterException;
-use FOXRP\Rippled\Exception\ResponseErrorException;
+use Aiwozhe\Rippled\Client;
+use Aiwozhe\Rippled\Exception\InvalidParameterException;
+use Aiwozhe\Rippled\Exception\ResponseErrorException;
 
 $client = new Client('https://s1.ripple.com:51234');
 
@@ -113,13 +113,13 @@ try {
     $response = $client->send('account_info', [
         'account' => 'rG1QQv2nh2gr7RCZ1P8YYcBUKCCN633jCn'
     ]);
-    
+
     // Set balance if successful.
     if ($response->isSuccess()) {
         $data = $response->getResult();
         $balance = $data['account_data']['Balance'];
     }
-    
+
 } catch (InvalidParameterException $e) {
     // Catch validation errors that occur before the request is sent.
     // i.e. missing required params, unrecognized params, etc.
@@ -163,7 +163,7 @@ parameters or normalizing the response.
 
 ```php
 // Instantiate the client.
-$client = new \FOXRP\Rippled\Client('https://s1.ripple.com:51234');
+$client = new \Aiwozhe\Rippled\Client('https://s1.ripple.com:51234');
 
 // Retrieve the info.
 $res = $client->post('account_info', ['account' => 'rG1QQv2nh2gr7RCZ1P8YYcBUKCCN633jCn']);
@@ -198,7 +198,7 @@ Output of `print_r($res)`:
                 )
 
             [status] => success
-            [validated] => 
+            [validated] =>
         )
 )
 ```

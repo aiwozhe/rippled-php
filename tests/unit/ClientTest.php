@@ -1,9 +1,9 @@
 <?php
 
-namespace FOXRP\Rippled\Tests;
+namespace Aiwozhe\Rippled\Tests;
 
-use FOXRP\Rippled\Api\Anon\Account\AccountInfoMethod;
-use FOXRP\Rippled\Client;
+use Aiwozhe\Rippled\Api\Anon\Account\AccountInfoMethod;
+use Aiwozhe\Rippled\Client;
 use PHPUnit\Framework\TestCase;
 
 /**
@@ -16,7 +16,7 @@ class ClientTest extends TestCase
     */
     public function testIsThereAnySyntaxError(): void
     {
-        $client = new Client('https://example.com');
+        $client = new Client('https://s1.ripple.com:51234');
         $this->assertTrue(is_object($client));
         unset($client);
     }

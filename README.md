@@ -39,7 +39,7 @@ composer require foxrp/rippled-php
 ```php
 <?php
 
-use FOXRP\Rippled\Client;
+use Aiwozhe\Rippled\Client;
 
 $client = new Client('https://s1.ripple.com:51234');
 

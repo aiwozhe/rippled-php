@@ -1,10 +1,10 @@
 <?php
 
-namespace FOXRP\Rippled\Tests\Api;
+namespace Aiwozhe\Rippled\Tests\Api;
 
 use PHPUnit\Framework\TestCase;
-use FOXRP\Rippled\Exception\FieldException;
-use FOXRP\Rippled\Api\Field;
+use Aiwozhe\Rippled\Exception\FieldException;
+use Aiwozhe\Rippled\Api\Field;
 
 /**
 *  Test for Client class

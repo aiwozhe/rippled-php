@@ -1,10 +1,10 @@
 <?php declare(strict_types=1);
 
-namespace FOXRP\Rippled\Api\TransactionType;
+namespace Aiwozhe\Rippled\Api\TransactionType;
 
-use FOXRP\Rippled\Api\AbstractFieldable;
-use FOXRP\Rippled\Api\Field;
-use FOXRP\Rippled\Api\FieldableInterface;
+use Aiwozhe\Rippled\Api\AbstractFieldable;
+use Aiwozhe\Rippled\Api\Field;
+use Aiwozhe\Rippled\Api\FieldableInterface;
 
 /**
  * Provides an abstract for defining transaction types and validating their fields.
@@ -12,7 +12,7 @@ use FOXRP\Rippled\Api\FieldableInterface;
 abstract class AbstractTransactionType extends AbstractFieldable implements FieldableInterface
 {
     /**
-     * @throws \FOXRP\Rippled\Exception\FieldException
+     * @throws \Aiwozhe\Rippled\Exception\FieldException
      */
     public function setFields(): void
     {

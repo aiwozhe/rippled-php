@@ -1,9 +1,9 @@
 <?php declare(strict_types=1);
 
-namespace FOXRP\Rippled\FunctionalTests\Api\Method;
+namespace Aiwozhe\Rippled\FunctionalTests\Api\Method;
 
-use FOXRP\Rippled\Api\Transaction;
-use FOXRP\Rippled\FunctionalTests\FunctionalTestCase;
+use Aiwozhe\Rippled\Api\Transaction;
+use Aiwozhe\Rippled\FunctionalTests\FunctionalTestCase;
 
 class PaymentTest extends FunctionalTestCase
 {

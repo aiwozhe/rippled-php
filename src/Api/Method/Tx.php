@@ -1,8 +1,8 @@
 <?php declare(strict_types=1);
 
-namespace FOXRP\Rippled\Api\Method;
+namespace Aiwozhe\Rippled\Api\Method;
 
-use FOXRP\Rippled\Api\Field;
+use Aiwozhe\Rippled\Api\Field;
 
 /**
  * Tx Method Class
@@ -16,7 +16,7 @@ class Tx extends AbstractMethod
     /**
      * {@inheritDoc}
      *
-     * @throws \FOXRP\Rippled\Exception\FieldException
+     * @throws \Aiwozhe\Rippled\Exception\FieldException
      */
     public function setFields(): void
     {

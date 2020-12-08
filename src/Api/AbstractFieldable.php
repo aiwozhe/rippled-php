@@ -1,8 +1,8 @@
 <?php declare(strict_types=1);
 
-namespace FOXRP\Rippled\Api;
+namespace Aiwozhe\Rippled\Api;
 
-use FOXRP\Rippled\Exception\InvalidParameterException;
+use Aiwozhe\Rippled\Exception\InvalidParameterException;
 
 /**
  * {@inheritDoc}

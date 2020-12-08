@@ -1,9 +1,9 @@
 <?php
 
-namespace FOXRP\Rippled\Tests\Transaction\Type;
+namespace Aiwozhe\Rippled\Tests\Transaction\Type;
 
 use PHPUnit\Framework\TestCase;
-use FOXRP\Rippled\Api\TransactionType\Skeleton;
+use Aiwozhe\Rippled\Api\TransactionType\Skeleton;
 
 class SkeletonTest extends TestCase
 {

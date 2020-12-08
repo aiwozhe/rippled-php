@@ -1,6 +1,6 @@
 <?php declare(strict_types=1);
 
-namespace FOXRP\Rippled\FunctionalTests;
+namespace Aiwozhe\Rippled\FunctionalTests;
 
 class _SanityCheckTest extends FunctionalTestCase
 {

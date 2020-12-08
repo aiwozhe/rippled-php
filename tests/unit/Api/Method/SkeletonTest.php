@@ -1,9 +1,9 @@
 <?php
 
-namespace FOXRP\Rippled\Tests\Api\Method;
+namespace Aiwozhe\Rippled\Tests\Api\Method;
 
 use PHPUnit\Framework\TestCase;
-use FOXRP\Rippled\Api\Method\Skeleton;
+use Aiwozhe\Rippled\Api\Method\Skeleton;
 
 class SkeletonTest extends TestCase
 {

@@ -1,8 +1,8 @@
 <?php
 
-namespace FOXRP\Rippled\Tests\Api\Method;
+namespace Aiwozhe\Rippled\Tests\Api\Method;
 
-use FOXRP\Rippled\Tests\Api\MethodTestCase;
+use Aiwozhe\Rippled\Tests\Api\MethodTestCase;
 
 class ServerInfoTest extends MethodTestCase
 {
